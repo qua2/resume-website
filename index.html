@@ -339,13 +339,7 @@ body {
   <div class="hero">
     <!-- 大頭照 -->
     <div class="avatar-wrap">
-      <div class="avatar-placeholder" id="av-ph" onclick="document.getElementById('avatar-input').click()">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#5a8ab8" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-        <span data-zh="點擊上傳大頭照" data-en="Upload Photo">點擊上傳大頭照</span>
-      </div>
-      <img id="av-img" class="avatar-real" alt="Photo">
-      <div class="avatar-change-btn" onclick="document.getElementById('avatar-input').click()" data-zh="更換照片" data-en="Change">更換照片</div>
-      <input type="file" id="avatar-input" accept="image/*" onchange="uploadAvatar(this)">
+      <img src="images/avatar.jpg" class="avatar-real" style="display:block;" alt="Photo">
     </div>
 
     <!-- 文字 -->
@@ -580,12 +574,9 @@ body {
           <span class="ptag">CLAHE</span><span class="ptag">Focal Loss</span><span class="ptag">Shape-Aware Loss</span>
         </div>
         <div class="project-img-row">
-          <div class="img-box" onclick="triggerImg('p1i1', this)">
-            <img id="p1i1-d" style="display:none;"><div class="ov" data-zh="更換圖片" data-en="Change">更換圖片</div>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7aaed4" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <div class="ph" data-zh="點擊上傳樂譜辨識截圖" data-en="Upload screenshot">點擊上傳樂譜辨識截圖</div>
+          <div class="img-box" style="cursor:default;">
+            <img src="images/project1.jpg" style="display:block;">
           </div>
-          <input type="file" id="p1i1" accept="image/*" style="display:none;">
         </div>
       </div>
 
@@ -605,12 +596,9 @@ body {
           <span class="ptag">TensorFlow</span><span class="ptag">Keras</span>
         </div>
         <div class="project-img-row">
-          <div class="img-box" onclick="triggerImg('p2i1', this)">
-            <img id="p2i1-d" style="display:none;"><div class="ov" data-zh="更換圖片" data-en="Change">更換圖片</div>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7aaed4" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <div class="ph" data-zh="點擊上傳神經網路圖" data-en="Upload image">點擊上傳神經網路圖</div>
+          <div class="img-box" style="cursor:default;">
+            <img src="images/project2.jpg" style="display:block;">
           </div>
-          <input type="file" id="p2i1" accept="image/*" style="display:none;">
         </div>
       </div>
 
@@ -628,12 +616,9 @@ body {
           <span class="ptag">Mask</span><span class="ptag">Threshold</span><span class="ptag">Color Segmentation</span>
         </div>
         <div class="project-img-row">
-          <div class="img-box" onclick="triggerImg('p3i1', this)">
-            <img id="p3i1-d" style="display:none;"><div class="ov" data-zh="更換圖片" data-en="Change">更換圖片</div>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7aaed4" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <div class="ph" data-zh="點擊上傳辨識截圖" data-en="Upload screenshot">點擊上傳辨識截圖</div>
+          <div class="img-box" style="cursor:default;">
+            <img src="images/project3.jpg" style="display:block;">
           </div>
-          <input type="file" id="p3i1" accept="image/*" style="display:none;">
         </div>
       </div>
 
@@ -667,13 +652,8 @@ body {
     <div class="section-body">
       <div class="attach-grid">
         <div class="attach-item">
-          <div class="attach-img-area" onclick="triggerImg('at1', this)">
-            <img id="at1-d" style="display:none;">
-            <div class="attach-ov" data-zh="更換圖片" data-en="Change">更換圖片</div>
-            <div class="attach-ph">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-              <span data-zh="點擊上傳獎狀圖片" data-en="Upload certificate image">點擊上傳獎狀圖片</span>
-            </div>
+          <div class="attach-img-area" style="cursor:default;">
+            <img src="images/award1.jpg" style="display:block;">
           </div>
           <input type="file" id="at1" accept="image/*" style="display:none;">
           <div class="attach-caption">
@@ -682,13 +662,8 @@ body {
           </div>
         </div>
         <div class="attach-item">
-          <div class="attach-img-area" onclick="triggerImg('at2', this)">
-            <img id="at2-d" style="display:none;">
-            <div class="attach-ov" data-zh="更換圖片" data-en="Change">更換圖片</div>
-            <div class="attach-ph">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-              <span data-zh="點擊上傳證書圖片" data-en="Upload certificate image">點擊上傳證書圖片</span>
-            </div>
+          <div class="attach-img-area" style="cursor:default;">
+            <img src="images/award2.jpg" style="display:block;">
           </div>
           <input type="file" id="at2" accept="image/*" style="display:none;">
           <div class="attach-caption">
